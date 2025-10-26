@@ -1,5 +1,3 @@
-// --- Libraries ---
-// Wire.h is needed for I2C communication
 #include <Wire.h> 
 #include <LiquidCrystal_I2C.h>
 
@@ -17,7 +15,6 @@ void setup() {
   // Initialize the LCD
   lcd.init();
   
-  // Turn on the backlight (Crucial for visibility)
   lcd.backlight();
   
   // Set the cursor to the first column (0) of the first row (0)
@@ -30,6 +27,5 @@ void setup() {
 }
 
 void loop() {
-  // Nothing needs to be constantly updated in the loop for a basic test.
-  // The display remains static.
+  
 }
