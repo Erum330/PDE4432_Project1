@@ -1,0 +1,45 @@
+#include <DHT.h>
+
+// --- PIN DEFINITIONS ---
+#define DHT_PIN 2              // Digital Pin 2 for DHT data connection
+#define DHTTYPE DHT11         
+
+// --- DHT Object Initialization ---
+// Initialize DHT sensor on the specified pin and type
+DHT dht(DHT_PIN, DHTTYPE);
+
+// --- CONTROL VARIABLES ---
+float T_Actual = 0.0;
+
+void setup() {
+  Serial.begin(9600);
+
+  dht.begin();
+
+  Serial.println("--- DHT11 Temperature Reader (Serial Output) Started ---");
+  delay(2000); 
+}
+
+void loop() {
+  
+  delay(2000);
+
+  
+  float newTemp = dht.readTemperature();
+
+  
+  if (!isnan(newTemp)) {
+    T_Actual = newTemp;
+
+    // Display data on Serial Monitor
+    Serial.print("Timestamp (ms): ");
+    Serial.print(millis());
+    Serial.print(" | Temperature: ");
+    Serial.print(T_Actual, 1); // Print temperature with 1 decimal place
+    Serial.println(" °C");
+
+  } else {
+    // If read fails, print error message
+    Serial.println("DHT11 Read Failed! Check wiring and ensure the sensor is powered.");
+  }
+}
