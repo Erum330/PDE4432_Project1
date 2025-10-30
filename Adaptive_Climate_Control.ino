@@ -39,11 +39,11 @@ unsigned long previousTime = 0;
 const float SAMPLE_TIME_SEC = 1.0;   // 1-second sample period
 
 // ==================== OTHER CONSTANTS ====================
-const float T_MIN = 28.7;     // Setpoint in bright light
-const float T_MAX = 30.0;     // Setpoint in darkness
+const float T_MIN = 24.0;     // Setpoint in bright light
+const float T_MAX = 26.0;     // Setpoint in darkness
 const int FAN_DEADBAND = 15;  // Ignore tiny PID outputs
 const double TEMP_DEADBAND = 0.1;  // ±0.2°C near setpoint = fan off
-const int MIN_START_PWM = 150;     // Minimum speed once running
+const int MIN_START_PWM = 200;     // Minimum speed once running
 
 // ==================== FUNCTIONS ====================
 
