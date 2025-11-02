@@ -139,6 +139,8 @@ The Adaptive Climate Controller successfully stabilized the temperature around t
 
 -   **PID Tuning:** K<sub>p</sub> is a multiplier for error; an aggressive K<sub>p</sub> will immediately saturate the PWM output, rendering the rest of the PID control useless for variable speed.
 
+**YOUTUBE LINK:**https://www.youtube.com/playlist?list=PL-FWyHN1v5SLkw_UbEsgiCWoWJX2MbhVE
+
 **CONTRIBUTION MATRIX**
 
 | **Student Name** | **Task Description** |
