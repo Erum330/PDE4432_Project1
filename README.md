@@ -78,7 +78,7 @@ This ensures that whenever the fan is commanded to run, it receives a minimum PW
 | **LDR Sensor** | Signal | Analog Pin A0 | Reads ambient light intensity (Setpoint input). |
 | **Heat Disturbance** | Terminals | External Power Supply | The 5W, 10Ω resistor simulates an environmental heat load. |
 
-![Circuit Wiring](Circuit Final.png)
+![Circuit Wiring](Circuit_Final.png)
 
 **PROCESS**
 
