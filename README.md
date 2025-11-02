@@ -1,13 +1,17 @@
 PROJECT TITLE
+
 Adaptive Climate Control System with PID and Ambient Light Feedback
 
 This project implements a closed-loop control system using an Arduino to maintain the temperature of an enclosed environment. The desired temperature (Setpoint) is dynamically adjusted based on ambient light levels (simulating a comfort/energy-saving model). Cooling is achieved using a DC fan controlled by a finely tuned PID algorithm.
 
 AUTHORS
+
 Erum Iftikhar M01088213
-Gaythri
+
+Gayathri Satheesh L M01087828
 
 PROBLEM STATEMENT 
+
 The primary challenge is to create an energy-efficient and responsive climate control system that can stabilize the temperature of an enclosed space while adapting its target based on environmental context.
 
 The main issue that was addressed was adaptive control, the system must vary the comfort level based on ambient light (LDR), setting a cooler target during high light and a warmer target during low light.
