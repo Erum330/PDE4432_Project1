@@ -62,7 +62,7 @@ This ensures that whenever the fan is commanded to run, it receives a minimum PW
 
 ### The circuit diagram below (generated in Tinkercad) details the connections, including the separation of the 5V logic supply and the 9V motor supply.
 
-![](file:///C:/Users/erum8/AppData/Local/Temp/lu3234020eboc.tmp/lu3234020ebpk_tmp_a2a30c1e.gif) 
+![Tinkercad Wiring Diagram](tinker.png)
 
 **Detailed Wiring Explanation**
 
@@ -78,7 +78,7 @@ This ensures that whenever the fan is commanded to run, it receives a minimum PW
 | **LDR Sensor** | Signal | Analog Pin A0 | Reads ambient light intensity (Setpoint input). |
 | **Heat Disturbance** | Terminals | External Power Supply | The 5W, 10Ω resistor simulates an environmental heat load. |
 
-![](file:///C:/Users/erum8/AppData/Local/Temp/lu3234020eboc.tmp/lu3234020ebpk_tmp_a0a01d96.gif)
+![Circuit Wiring](Circuit Final.png)
 
 **PROCESS**
 
